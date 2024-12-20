@@ -6,7 +6,6 @@ The code is organized by analysis task:
 
 - `get_trajectories/`:
 - `compute_features/`:
-- `compute_TAMSD/`:
 - `generate_ImmobileMobile/`:
 - `mix_models/`:
 - `alpha_estimates/`:
