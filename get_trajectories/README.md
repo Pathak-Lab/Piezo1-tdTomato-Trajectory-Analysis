@@ -5,6 +5,6 @@
 - Prepare a list of JSON file names without extension as a text file (e.g. JSONs from different experimental sessions).
 - Run `getTrajs.R` at the command line as indicated in the scripts comments (note that the script requires a minimum trajectory length cutoff).
 - The output will be one RDS file per JSON file containing a list of all the trajecories of length >= cutoff 
-  - each list element is a 3-column matrix: | frame number | x | y |
+  - each list element is a 2-column matrix with position vector components columnwise
   - missing positions are encoded as NA
   - the name of each list element is the name of the JSON file + the track index in the JSON
