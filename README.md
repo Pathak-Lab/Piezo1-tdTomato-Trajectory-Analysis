@@ -2,7 +2,22 @@
 Code associated with  Piezo1-tdTomato trajectory analysis reported in Ly et al. https://doi.org/10.1101/2022.09.30.510193
 
 ## Overview
-The code is organized by analysis task a 
+The code is organized by analysis task:
+
+- `get_trajectories/`:
+- `compute_features/`:
+- `compute_TAMSD/`:
+- `generate_ImmobileMobile/`:
+- `mix_models/`:
+- `alpha_estimates/`:
+
+Minimal documentation is provided as README.md files under each directory and comments in all files
+
+## Requirements
+
+- R (>= 4.0.0)
+  - mixtools package
+- Mathematica (tested with version 14)
 
 ## License
 
@@ -18,4 +33,4 @@ bioRxiv 2022.09.30.510193; doi: https://doi.org/10.1101/2022.09.30.510193
 
 ## Contact
 
-For questions or issues, please open an issue on GitHub or contact [jfreites@uci.edu].
+For questions or issues, please contact [jfreites@uci.edu](mailto:jfreites@uci.edu).
