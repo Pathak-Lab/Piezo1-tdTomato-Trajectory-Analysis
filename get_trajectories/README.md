@@ -4,3 +4,4 @@
 
 - Prepare a list of JSON file names without extension as a text file (e.g. JSONs from different experimental sessions).
 - Run `getTrajs.R` at the command line as indicated in the scripts comments
+  - A minimum trajectory length cutoff is required by the script
