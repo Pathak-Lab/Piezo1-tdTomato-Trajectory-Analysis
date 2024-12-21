@@ -1,5 +1,5 @@
 # Piezo1-tdTomato Trajectory Analysis
-Code associated with  Piezo1-tdTomato trajectory analysis reported in Ly et al. https://doi.org/10.1101/2022.09.30.510193
+Code associated with  Piezo1-tdTomato trajectory analyses reported in Ly et al. https://doi.org/10.1101/2022.09.30.510193
 
 ## Overview
 The code is organized by analysis task:
