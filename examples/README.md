@@ -15,8 +15,8 @@ The feature calculations under `untreated/` and `cholesterol/` were performed by
 ```bat
 for i in untreated cholesterol
 do
-  Rscript getsRg.R ${i}-sRg 200 ../examples/jfilenamesList_${i} ../examples/$i ../examples/$i > ../examples/${i}/out.srg.$i 2>&1 &
-  Rscript getTAMSD.R 20 ${i}-TAMSD  200 ../examples/jfilenamesList_${i} ../examples/$i ../examples/$i > ../examples/${i}/out.tamsd.$i 2>&1 &
+  Rscript getsRg.R $i 200 ../examples/jfilenamesList_${i} ../examples/$i ../examples/$i > ../examples/${i}/out.srg.$i 2>&1 &
+  Rscript getTAMSD.R 20 $i  200 ../examples/jfilenamesList_${i} ../examples/$i ../examples/$i > ../examples/${i}/out.tamsd.$i 2>&1 &
   Rscript getStepsNormalized.R  $i 200 ../examples/jfilenamesList_${i} ../examples/$i ../examples/$i > ../examples/${i}/out.stepnorm.$i 2>&1 &
   Rscript getStepLengthsDelta.R  200 ../examples/jfilenamesList_${i} 1 ../examples/$i ../examples/$i > ../examples/${i}/out.steplen.$i 2>&1 &
 done
