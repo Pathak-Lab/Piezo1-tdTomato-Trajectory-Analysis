@@ -46,8 +46,8 @@ if(length(args) > 6) {
     stop('too many arguments')
     }
 
-if(length(args) >= 5) {
-    delta<-paste0(args[5],"/")
+if(length(args) >= 4) {
+    delta<-args[4]
     } else {
     delta<-1
     }
