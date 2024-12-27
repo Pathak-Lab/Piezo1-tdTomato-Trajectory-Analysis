@@ -18,7 +18,7 @@
 #          
 # Run at the command line as
 #
-#         Rscript getStepLengthsDelta.R outname cutoff jfilenamesList delta dataDir workDir  
+#         Rscript getStepLengthsDelta.R cutoff jfilenamesList delta dataDir workDir  
 # Input: 
 #         outname: base name for the output file (see below)
 #         cutoff: the minimum trajectory length used in getTrajs.R doesn't play a role in the calculation, it's just added to output file name 
@@ -38,41 +38,37 @@
 
 args<-commandArgs(trailingOnly = TRUE    )
 
-if(length(args) < 3) {
+if(length(args) < 2) {
     stop('at least three arguments needed')
     }
 
-if(length(args) > 6) {
+if(length(args) > 5) {
     stop('too many arguments')
     }
 
-if(length(args) >= 4) {
-    delta<-args[4]
+if(length(args) >= 3) {
+    delta<-as.numeric(args[3])
     } else {
     delta<-1
     }
 
-if(length(args) >= 5) {
-    dataDir<-paste0(args[5],"/")
+if(length(args) >= 4) {
+    dataDir<-paste0(args[4],"/")
     } else {
     dataDir<-paste0(getwd(),"/")
     }
 
-if(length(args) == 6) {
-    workDir<-paste0(args[6],"/")
+if(length(args) == 5) {
+    workDir<-paste0(args[5],"/")
     } else {
     workDir<-paste0(getwd(),"/")
     }
 
-#base filename
-
-outname<-args[1]
-
 #trajectory length cutoff only used in the output filename
-cutof<-args[2]
+cutof<-args[1]
 
 #list of json filenames (without extension)
-jfilenames<-scan(args[3],what=character())
+jfilenames<-scan(args[2],what=character())
 
 #check trajAnalysis.R location
 
