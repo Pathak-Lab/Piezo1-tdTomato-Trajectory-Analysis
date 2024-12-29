@@ -1,1 +1,6 @@
+# Alpha Estimates
 
+Generate anomalous exponent (e.g. TAMSD vs. lag power-law exponent) mean and standard deviation estimates from an ensemble of heterogeneous diffusers as presented in Kepten et al PRE 2013 10.1103/PhysRevE.87.052713
+
+- `getKepten.R' An R function implementing the method described in Kepten et al. It also generates plots that could help assessing the quality of the estimates.
+- `keptenEstimates.ipynb`
