@@ -25,7 +25,7 @@
 #
 
 getKepten<-function(myTAMSD,mylags,noise,outname) {
-    source('trajAnalysis.R')
+    source('../compute_features/trajAnalysis.R')
     logdiff<-function(z,lags)diff(log(z))/diff(log(lags))
 pdf(paste0(outname,'.pdf'),width = 8,height = 8)
     par(mfrow = c(2, 2))
