@@ -9,7 +9,7 @@ The code is organized by analysis task:
 - `generate_ImmobileMobile/`: use Golan and Sherman "scaled" radius of gyration (Nat Commun 2017 10.1038/ncomms15851) to label trajectories as "mobile" or "immobile"
 - `mobile_oddsratio/`: use odds ratio to estimate treatmemt effects on "mobile" proportions 
 - `mix_models/`: use mixture models to describe a trajectory ensemble step distribution and individual trajectories step-length distributions
-- `alpha_estimates/`: use the methodology proposed by Kepten et. al (PRE 2013 10.1103/PhysRevE.87.052713) to characterize the TAMSD anomalous exponents distribution in an esemble of the heterogenous diffusers
+- `alpha_estimates/`: use the methodology proposed by Kepten et. al (PRE 2013 10.1103/PhysRevE.87.052713) to characterize the TAMSD anomalous exponents distribution in an ensemble of the heterogenous diffusers
 
 Minimal documentation is provided as README.md files under each directory and as comments in all files
 
